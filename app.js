@@ -32,34 +32,17 @@ app.use(
 // routers
 app.use('/', pageRouter)
 
-// // errors : page not found 404
-// app.use((req, res, next) => {
-// const err = new Error('Page not found')
-//   err.status = 404
-//   next(err)
-// })
-
-// // Handling errors
-// app.use((err, req, res, next) => {
-//   res.status(err.status || 500)
-//   res.send(err.message)
-// })
-
 // errors : page not found 404
 app.use((req, res, next) => {
-  const err = '/pagenotfound'
+  const err = new Error('Page not found')
   err.status = 404
   next(err)
 })
 
 // Handling errors
 app.use((err, req, res, next) => {
-  // res.status(err.status || 500)
-  res.redirect('/pagenotfound')
-  // res.send(err.message)
-  // res.status(err.status || 500)
-  // if (err) {
-  // }
+  res.status(err.status || 500)
+  res.send(err.message)
 })
 
 // setting up the server
