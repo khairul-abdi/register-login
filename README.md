@@ -1,4 +1,4 @@
-# Register & Login (https://6g2qr.sse.codesandbox.io/ "Live Demo")
+# Register & Login
 
 - Setup & Install / Simple Server
 - Simple API
