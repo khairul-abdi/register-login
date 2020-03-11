@@ -5,10 +5,10 @@ const mysql = require('mysql')
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'www'
+  host: 'us-cdbr-iron-east-04.cleardb.net',
+  user: 'b718451d97f87a',
+  password: '54fb84e5',
+  database: 'heroku_d94675a72978852'
 })
 
 pool.getConnection((err, connection) => {
