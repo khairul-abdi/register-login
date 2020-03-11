@@ -2,7 +2,6 @@ const util = require('util')
 const mysql = require('mysql')
 
 // Connection to the database
-
 const pool = mysql.createPool({
   connectionLimit: 10,
   host: 'us-cdbr-iron-east-04.cleardb.net',
