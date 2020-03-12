@@ -3,11 +3,11 @@ const mysql = require('mysql')
 
 // Connection to the database
 const pool = mysql.createPool({
-  connectionLimit: 10,
-  HOST: 'us-cdbr-iron-east-04.cleardb.net',
-  USER: 'b718451d97f87a',
-  PASSWORD: '54fb84e5',
-  DB: 'heroku_d94675a72978852'
+  // connectionLimit: 10,
+  HOST: 'xxxcdbr-iron-east-04.cleardb.net',
+  USER: 'xxx8451d97f87a',
+  PASSWORD: 'xxxb84e5',
+  DB: 'xxxoku_d94675a72978852'
 })
 
 pool.getConnection((err, connection) => {
