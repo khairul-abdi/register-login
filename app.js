@@ -5,7 +5,7 @@ const pageRouter = require('./routes/pages')
 
 const app = express()
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 
 // for body parser
 app.use(express.urlencoded({ extended: false }))
