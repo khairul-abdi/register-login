@@ -1,6 +1,8 @@
 # [Register & Login](https://eh9qr.sse.codesandbox.io/ 'Live Demo')
 
 - Express Router
+- Express Session
+- Bcrypt
 - Static Files
 - Template Engine Setup With Views
 - Nodemon
